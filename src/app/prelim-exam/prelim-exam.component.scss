@@ -28,9 +28,9 @@ section {
 @media screen and (max-width: 920px) {
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(8, 1fr); // 8 items per row
-    background-color: #4a6fa5; // blue (not too bright)
-    color: #eef3f7; // text color that compliments the background
+    grid-template-columns: repeat(8, 1fr);
+    background-color: #4a6fa5; 
+    color: #eef3f7; 
     gap: 12px;
   }
 
@@ -44,9 +44,9 @@ section {
 @media screen and (max-width: 756px) {
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); // 6 items per row
-    background-color: #2a6f4e; // green (not too bright)
-    color: #f1f7ed; // text color that compliments the background
+    grid-template-columns: repeat(6, 1fr); 
+    background-color: #2a6f4e; 
+    color: #f1f7ed; 
     gap: 10px;
   }
 
@@ -60,9 +60,9 @@ section {
 @media screen and (max-width: 460px) {
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr; // 1 item per row
-    background-color: #a73a3a; // red (not too bright)
-    color: #f8e9e9; // text color that compliments the background
+    grid-template-columns: 1fr; 
+    background-color: #a73a3a; 
+    color: #f8e9e9; 
     gap: 8px;
   }
 
