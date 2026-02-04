@@ -1,0 +1,124 @@
+/* RESET + BASE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #374151;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  padding: 1.2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(79, 70, 229, 0.25);
+}
+
+/* MAIN LAYOUT */
+.main-container {
+  width: 90%;
+  max-width: 750px;
+  margin: 2.5rem auto;
+}
+
+/* TITLE + BUTTON */
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.title-bar h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* ADD BUTTON */
+.add-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.1rem;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.add-btn::before {
+  content: "+";
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.45);
+}
+
+.add-btn:active {
+  transform: translateY(0);
+}
+
+/* STUDENT CARD */
+.student-card {
+  background: #ffffff;
+  padding: 1.2rem 1.4rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(79, 70, 229, 0.15);
+}
+
+.student-card .student-name {
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.student-card p {
+  margin: 0.25rem 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+/* DELETE BUTTON */
+.btn-delete {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.85rem;
+  background: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}

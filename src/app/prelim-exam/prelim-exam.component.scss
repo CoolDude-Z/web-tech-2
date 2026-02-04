@@ -24,50 +24,48 @@ section {
  min-height: 80px;
 }
 
-// Desktop layout
+
 @media screen and (max-width: 920px) {
   .grid-container {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr); // 8 items per row
-    background-color: #4a6fa5; // blue (not too bright)
-    color: #eef3f7; // text color that compliments the background
+    grid-template-columns: repeat(8, 1fr); /* 8 items per row */
+    background-color: #4a6fa5; /* subtle blue */
+    color: #000000;            /* light text that compliments blue */
     gap: 12px;
   }
 
   .grid-container .grid-item {
-    padding: 14px;
-    text-align: center;
+    padding: 1.25rem;
   }
 }
 
-// Tablet layout
+/*---------------------------------------
+  💻 Tablet Layout (max-width: 756px)
+---------------------------------------*/
 @media screen and (max-width: 756px) {
   .grid-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); // 6 items per row
-    background-color: #2a6f4e; // green (not too bright)
-    color: #f1f7ed; // text color that compliments the background
+    grid-template-columns: repeat(6, 1fr); /* 6 items per row */
+    background-color: #2a6f4e; /* subtle green */
+    color: #000000;            /* light text that compliments green */
     gap: 10px;
   }
 
   .grid-container .grid-item {
-    padding: 12px;
-    text-align: center;
+    padding: 1rem;
   }
 }
 
-// Mobile layout
+/*---------------------------------------
+  📱 Mobile Layout (max-width: 460px)
+---------------------------------------*/
 @media screen and (max-width: 460px) {
   .grid-container {
-    display: grid;
-    grid-template-columns: 1fr; // 1 item per row
-    background-color: #a73a3a; // red (not too bright)
-    color: #f8e9e9; // text color that compliments the background
+    grid-template-columns: 1fr; /* 1 item per row */
+    background-color: #a73a3a; /* subtle red */
+    color: #000000;            /* light text that compliments red */
     gap: 8px;
   }
 
   .grid-container .grid-item {
-    padding: 10px;
-    text-align: center;
+    padding: 0.75rem;
   }
 }

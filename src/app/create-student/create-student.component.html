@@ -1,0 +1,39 @@
+<!-- HEADER -->
+<header class="header">
+  <h1>Student Registration</h1>
+</header>
+
+<!-- FORM CONTAINER -->
+<main class="form-container">
+
+  <form class="student-form">
+
+    <label for="studentId">Student ID</label>
+    <input type="text" id="studentId" placeholder="Enter student ID">
+
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" placeholder="Enter first name">
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" placeholder="Enter last name">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter email">
+
+    <label for="age">Age</label>
+    <input type="number" id="age" placeholder="Enter age">
+
+    <label for="gpa">GPA</label>
+    <input type="text" id="gpa" placeholder="Enter GPA">
+
+    <label for="status">Enrollment Status</label>
+    <input type="text" id="status" placeholder="Enter status">
+
+    <div class="button-group">
+<button (click)="back()" class="btn-back">Back</button>
+      <button type="submit" class="btn-submit">Create student</button>
+    </div>
+
+  </form>
+
+</main>
